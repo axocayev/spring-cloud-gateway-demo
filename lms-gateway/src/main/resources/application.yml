@@ -1,0 +1,17 @@
+server:
+  port: 9905
+
+
+
+#spring:
+#  cloud:
+#   gateway:
+#     routes:
+#       - id: lessonMs
+#         uri: http://localhost:9901
+#         predicates:
+#         - Path=/lesson-ms/**
+#       - id: studentMs
+#         uri: http://localhost:9900
+#         predicates:
+#         - Path=/student-ms/**

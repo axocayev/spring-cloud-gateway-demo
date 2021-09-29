@@ -1,0 +1,22 @@
+server:
+  port: 8060
+  servlet:
+    context-path: /auth-ms
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/news_app
+    username: ${POSTGRES_USERNAME:postgres}
+    password: ${POSTGRES_PASSWORD:root}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+    open-in-view: off
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+app:
+  jwtSecret: ATLAcademy
+  jwtExpirationInMs: 60000
